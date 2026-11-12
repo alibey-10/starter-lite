@@ -4,4 +4,9 @@
   "compatibility_date": "2025-09-02",
   "compatibility_flags": ["nodejs_compat"],
   "main": "@tanstack/react-start/server-entry",
+  // Serve on <name>.<subdomain>.workers.dev and generate a preview URL for every uploaded version
+  "workers_dev": true,
+  "preview_urls": true,
+  // Settings for `wrangler preview` (used by Workers Builds for PR / non-production branch previews)
+  "previews": {},
 }
